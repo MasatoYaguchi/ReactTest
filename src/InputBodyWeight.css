@@ -1,0 +1,21 @@
+button {
+  font-size: calc(10px + 2vmin);
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.inputForm input {
+  font-size: xx-large;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  padding: auto;
+  margin-bottom: 10%;
+}
+
+.inputForm span {
+  font-size: calc(2px+1vmin);
+  color: #888;
+  position: relative;
+  left: -50px;
+}
