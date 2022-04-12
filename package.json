@@ -2,7 +2,7 @@
   "name": "vite-project",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://masatoyaguchi.github.io/ReactTest/",
+  "homepage": "https://masatoyaguchi.github.io/ReactTest",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
