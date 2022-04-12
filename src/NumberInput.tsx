@@ -4,11 +4,6 @@ interface NumberInputProps {
     onChangeFunc: { (value: number): void }
 }
 
-interface NumberInputData {
-    value: number
-}
-
-
 /**
  * 全角の数値とドットを半角に変換する
  * @param str 

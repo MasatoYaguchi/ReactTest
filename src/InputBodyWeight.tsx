@@ -3,7 +3,7 @@ import './InputBodyWeight.css'
 import { NumberInput } from "./NumberInput.js"
 import { LocalStorageManager } from './LocalStorageManager';
 
-function App(): JSX.Element {
+function InputBodyWeight(): JSX.Element {
   const [weight, setWeight] = useState(0);
   const [bodyFat, setbodyFat] = useState(0);
 
@@ -20,7 +20,10 @@ function App(): JSX.Element {
         <button type="button" onClick={
           () => {
             const unixTime = +(new Date());
-            LocalStorageManager.instance.setItem(unixTime.toString(), { weight: weight, bodyFat: bodyFat });
+            LocalStorageManager.instance.setItem(
+              unixTime.toString(),// keyはUnixTimme
+              { unixtime: unixTime, weight: weight, bodyFat: bodyFat }
+            );
           }
         }>
           保存
@@ -30,10 +33,11 @@ function App(): JSX.Element {
         入力体重: {weight} kg
       </p>
       <p>
-        入力体脂肪率{bodyFat} %
+        入力体脂肪率: {bodyFat} %
       </p>
+      <a>履歴</a>
     </div>
   )
 }
 
-export default App
+export default InputBodyWeight;
