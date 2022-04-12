@@ -6,7 +6,7 @@ import HistoryView from "./HistoryView";
 
 function Router(): JSX.Element {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="ReactTest">
             <Routes>
                 <Route path="/" element={<InputBodyWeight />} />
                 <Route path="history" element={<HistoryView />} />
