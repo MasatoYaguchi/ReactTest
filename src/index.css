@@ -13,10 +13,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  background-color: #18110d;
 }
 
 .contents {
-  background-color: #18110d;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,16 +24,19 @@ body {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  flex: 1;
 }
 
 a {
   transition: color 0.3s;
-  background-color: rgb(207, 201, 201);
+  background-color: rgb(61, 61, 61);
   padding: 0.5em;
   border-radius: 6px;
-  color: #000;
+  color: rgb(216, 216, 216);
+  text-decoration: none;
+  margin: 1em;
 }
 
 a:hover {
-  color: #ff976b;
+  color: #0527b1;
 }

@@ -1,6 +1,7 @@
 import { WeightData, LocalStorageManager } from './LocalStorageManager';
 import './HistoryView.css'
 import InputBodyWeight from './InputBodyWeight';
+import { Link } from 'react-router-dom';
 
 interface HistoryComponentProps {
     weightData: WeightData,
@@ -43,8 +44,7 @@ function HistoryView(): JSX.Element {
         <div className="contents">
             <h2>体重履歴</h2>
             <HistoryListomponent allData={allHistoryData} />
-            <a onClick={() => console.log("a")}>体重入力</a>
-            <InputBodyWeight />
+            <Link to="/">体重入力ページへ</Link>
         </div >
     );
 }

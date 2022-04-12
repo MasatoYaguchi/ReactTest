@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './InputBodyWeight.css'
 import { NumberInput } from "./NumberInput.js"
 import { LocalStorageManager } from './LocalStorageManager';
+import { Link } from 'react-router-dom';
 
 function InputBodyWeight(): JSX.Element {
   const [weight, setWeight] = useState(0);
@@ -9,7 +10,7 @@ function InputBodyWeight(): JSX.Element {
 
   return (
     <div className="contents">
-      <h2>体重管理</h2>
+      <h2>体重入力</h2>
       <NumberInput placeHolder='体重を入力' unit='kg' onChangeFunc={(val: number) => {
         setWeight(val);
       }} />
@@ -24,6 +25,7 @@ function InputBodyWeight(): JSX.Element {
               unixTime.toString(),// keyはUnixTimme
               { unixtime: unixTime, weight: weight, bodyFat: bodyFat }
             );
+            window.alert(`保存しました \n体重:${weight} 体脂肪率:${bodyFat}`);
           }
         }>
           保存
@@ -35,7 +37,7 @@ function InputBodyWeight(): JSX.Element {
       <p>
         入力体脂肪率: {bodyFat} %
       </p>
-      <a>履歴</a>
+      <Link to="/history">履歴ページへ</Link>
     </div>
   )
 }
