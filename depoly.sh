@@ -9,4 +9,4 @@ cd vite-project
 npm run build
 
 # ビルド出力ディレクトリに移動
-cd dist
+cd docs
