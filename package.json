@@ -5,7 +5,7 @@
   "homepage": "https://masatoyaguchi.github.io/ReactTest",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && cp docs/index.html docs/404.html",
     "preview": "vite preview"
   },
   "dependencies": {
