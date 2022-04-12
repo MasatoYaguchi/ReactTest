@@ -5,7 +5,7 @@ import HistoryView from "./HistoryView";
 
 
 function Router(): JSX.Element {
-    const baseName = import.meta.env.BASE_URL;
+    const baseName = import.meta.env.MODE === "production" ? "ReactTest" : "";
     return (
         <BrowserRouter basename={baseName}>
             {console.log(baseName)}

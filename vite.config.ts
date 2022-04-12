@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: 'https://masatoyaguchi.github.io/ReactTest',
+  base: './',
   build: {
     outDir: 'docs'
   }
